@@ -378,7 +378,7 @@ g_all = nn.Sequential(OrderedDict([
     # ('truncation', Truncation(avg_latent)),
     ('g_synthesis', G_synthesis())    
 ]))
-g_all.load_state_dict(torch.load('./karras2019stylegan-ffhq-1024x1024.for_g_all.pt'))
+g_all.load_state_dict(torch.load('./styleclip.pt'))
 
 g_synthesis = g_all.g_synthesis
 g_mapping = g_all.g_mapping
